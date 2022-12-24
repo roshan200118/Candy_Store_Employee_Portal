@@ -1,6 +1,6 @@
 # Candy Store Employee Portal
 
-A program that accepts a Vigenère’s Cipher ciphertext and key length, then using chi-square test, English letter frequencies, and scoring algorithms, the program outputs the calculated key and plaintext. Created using JavaScript. (2022).
+### Click here to open: https://candy-store-employee-portal.herokuapp.com/
 
 A candy store employee portal where employees can manage products, customers, employees, reservations, shipments and purchases. Employees can:
 * Perform CRUD operations on products
@@ -8,30 +8,32 @@ A candy store employee portal where employees can manage products, customers, em
 * View shipments from suppliers
 * View purchases made by customers
 * Organize items on page using filters
-&nbsp;
+<br />
+
 This project demonstrates the use of JavaScript, Express.js, AJAX, MySQL, Python, database design and normalization. (2021). 
+<br />
 
 
 
-https://user-images.githubusercontent.com/61467608/209451470-f097ebc0-615b-4bd0-8ec8-073d34db6a3b.mp4
+https://user-images.githubusercontent.com/61467608/209452043-11923f2f-3a85-48b7-a7a3-ea1530026be4.mp4
 
 
 
-https://user-images.githubusercontent.com/61467608/209451479-bef83943-d39b-4988-85f1-2911f6b10204.mp4
+https://user-images.githubusercontent.com/61467608/209452045-d48cf422-c7c2-4137-81f9-f4ef88808947.mp4
 
 
 
-https://user-images.githubusercontent.com/61467608/209451482-787a060b-fe30-4030-837b-7b8d043150cf.mp4
+https://user-images.githubusercontent.com/61467608/209452046-bf989745-a2ff-4407-86a0-314bc2456cf7.mp4
 
 
 
-https://user-images.githubusercontent.com/61467608/209451484-14348ab7-a2e3-4b02-8908-7a8fdd99dbdc.mp4
+https://user-images.githubusercontent.com/61467608/209452047-1a4bd011-da9e-47da-a8fb-7f2c53a7c092.mp4
 
 
 
-https://user-images.githubusercontent.com/61467608/209451486-cb559dc0-6688-4773-89d6-a858ea510760.mp4
+https://user-images.githubusercontent.com/61467608/209452048-63a4afc3-e3f4-437e-b5a7-00ab7d16d819.mp4
 
 
 
-https://user-images.githubusercontent.com/61467608/209451488-fbf9ff97-d171-4a0b-9d06-81756cda7672.mp4
+https://user-images.githubusercontent.com/61467608/209452049-83766a0b-c5bf-4095-a3ea-69a7904bc7c6.mp4
 
