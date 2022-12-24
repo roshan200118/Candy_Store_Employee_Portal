@@ -1,5 +1,5 @@
 const express = require('express');
-const newConn = require('../src/static/js/conn/connection.js');
+const newConn = require('./static/js/conn/connection');
 const app = express();
 
 app.use(express.static('static'));
