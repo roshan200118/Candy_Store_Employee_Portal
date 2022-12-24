@@ -8,6 +8,12 @@ function newConn()
         password:'9d994542',
         database:'heroku_ffb9511d068313f'
     });
+    // let conn = mysql.createConnection({
+    //     host:'localhost',
+    //     user: 'root',
+    //     password:'password',
+    //     database:'candy_retail'
+    // });
     return conn;
 }
 module.exports = newConn;

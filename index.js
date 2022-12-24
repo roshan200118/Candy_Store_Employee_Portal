@@ -28,7 +28,7 @@ function getPageBase(pageTitle) {
                             '<!-- Tab icon -->'+
                             '<link rel="icon" href="./imgs/candyStoreIcon.png">'+
 
-                            '<title>Team 12 - ' + pageTitle + '</title>'+
+                            '<title>Employee Portal - ' + pageTitle + '</title>'+
                         '</head>'+
                         '<body>'+
                             '<div class="page-nav">'+
