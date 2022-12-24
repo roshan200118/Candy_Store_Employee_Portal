@@ -1,0 +1,230 @@
+:root{
+    --dark-pink:#000050;
+    --med-pink: #8a8aff;
+
+    --v-light-pink: rgb(248, 202, 243);
+    --light-pink: #00b4d8;
+    --med-pink: rgb(255, 111, 159);
+    --dark-pink: rgb(255, 0, 153);
+
+    /* --v-light-green: rgb(150, 235, 150);
+    --light-green: rgb(95, 165,95);
+    --med-green: rgb(75,145,75);
+    --dark-green: rgb(55, 125, 55); */
+
+    /*-- colors with t prefix are same but transparent --*/
+    --t-v-light-pink: rgba(248, 202, 243, 40%);
+    /*--- c colors are followed by what they contrast---*/
+    --c-dark-blue: rgb(255,250,240); /* Very light orange */
+    --c-med-pink: rgb(255, 245, 255); /* Very light pink */
+
+}
+
+body{
+    min-height: 100vh;
+}
+/*----- Buttons -----*/
+.btn-round{
+    font-size: 100%;
+
+    height: 35px;
+    width: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+/*----- Default Page CSS -----*/
+.default-page{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 50px; /* Accounts for footer */
+}
+
+
+/*------ Nav and Footer css -----*/
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.page-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0rem 1.5rem;
+
+    width:100%;
+
+    position:sticky;
+    top: 0;
+    z-index: 9999;
+
+    background-color: var(--med-pink);
+    color: var(--c-med-pink);
+}
+/* Buttons */
+.nav-btn.active {
+    background-color: var(--c-med-pink);
+    color: var(--med-pink);
+}
+.nav-btn {
+    transition:0.4s;
+    color: var(--c-med-pink);;
+}
+.nav-btn:hover{
+    cursor:pointer;
+    color: var(--v-light-pink);
+    text-decoration: none;
+}
+.line-seperator{
+    height: 23px;
+    width: 2px;
+
+    margin: 0 1.25rem;
+
+    background-color: var(--c-med-pink);;
+    border-radius: 5px;
+}
+/* Header CSS */
+.header{
+    width: 33.3333%;
+    height: 100%;
+}
+/* Footer CSS */
+.footer-pos{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 1.5rem;
+
+    width:100%;
+    z-index: 9999;
+
+    background-color: var(--med-pink);
+    color: var(--c-med-pink);
+}
+
+.footer{
+    width: 33.33333%;
+}
+
+
+/*---------- Products Page----------*/
+.product-container{
+    padding: 15px;
+    width:100%;
+}
+.product-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    width: 100%;
+    box-shadow: 2px 3px rgb(0, 0, 0, 25%);
+    cursor: pointer;
+}
+.product-row:hover{
+    background-color: var(--t-v-light-pink);
+}
+.product-col{
+    width: 33.333333%;
+    display: flex;
+    align-items: center;
+}
+.product-col.left{
+    justify-content: start;
+}
+.product-col.center{
+    justify-content: center;
+}
+.product-col.right{
+    justify-content: end;
+}
+.product-id{
+    color: grey;
+    font-size: 85%;
+}
+.product-name{
+    font-weight: bold;
+    font-size: 125%;
+}
+
+/*-----_____----- Home page -----_____-----*/
+.home-col{
+    display:flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 5px 15px;
+    box-shadow: 2px 3px rgb(0, 0, 0, 25%);
+    margin:10px 0;
+}
+
+.home-desc{
+    border-bottom:2px solid black; 
+    width:100%; 
+    text-align:center;
+    padding: 0.25em;
+}
+
+.home-name{
+    padding: 0.25em;
+    font-weight: bold;
+    font-size: 115%;
+}
+
+.legend-col {
+    padding:15px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.legend-txt {
+    padding-top: 5px;
+}
+
+.legend-icon {
+    font-size: 275%;
+    transition:1s;
+}
+
+.legend-icon:hover {
+    transform: rotateY(180deg);
+}
+
+.icon {
+    height: 3rem;
+    width: 3rem;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }

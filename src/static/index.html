@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP AND JQUERY -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Personal Style Sheets-->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Tab icon -->
+    <link rel="icon" href="./imgs/candyStoreIcon.png">
+
+    <!-- Home Page Script -->
+    <script src="./js/homePage.js"></script>
+    
+    <title>Team 12 - Home</title>
+</head>
+<body onload="populateHomePage()">
+    <div class="page-nav">
+        <div class="header nav-left">
+            <div style="font-weight:bold; font-size: 2.25rem; display: flex;"><span class="icon" style="content: url(./imgs/candy.png);"></span> &nbsp; Employee Portal</div>
+        </div>
+    
+        <div class="header nav-center">
+            <div id="page_name_slot" style="font-weight:bold; font-size: 1.25rem; padding: 0 0.25rem">Home</div>
+        </div>
+    
+        <div class="header nav-right" >
+            <a id="home-btn-header" class="btn-round nav-btn active" href="/"><i class="fas fa-home"></i></a>
+            
+            <div class="line-seperator"></div>
+            
+            <a id="product-btn" class="btn-round nav-btn" href="/products"><i class="fas fa-store"></i></a>
+            
+            <div class="line-seperator"></div>
+
+            <a id="customers-btn" class="btn-round nav-btn" href="/customers"><i class="fas fa-users"></i></a>
+    
+            <div class="line-seperator"></div>
+            
+            <a id="employee-btn" class="btn-round nav-btn" href="/employees"><i class="fas fa-id-badge"></i></a>
+            
+            <div class="line-seperator"></div>
+            
+            <a id="reservation-btn" class="btn-round nav-btn" href="/reservations"><i class="fas fa-calendar"></i></a>
+    
+            <div class="line-seperator"></div>
+    
+            <a id="shipment-btn" class="btn-round nav-btn" href="/shipments"><i class="fas fa-box-open"></i></a>
+
+            <div class="line-seperator"></div>
+    
+            <a id="shipment-btn" class="btn-round nav-btn" href="/purchases"><i class="fas fa-receipt"></i></a>
+        </div>
+    </div>
+
+    <div class="default-page">
+        <!-- Employee and Customer of the month -->
+        <div class="row">
+            <div class="col-6">
+                <div class="home-col">
+                    <div class="home-desc"><span id="empMonth"></span> Employee Of The Month</div>
+                    <div id="empName" class="home-name"></div>
+                    <div id="empSales"></div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="home-col">
+                    <div class="home-desc"><span id="custMonth"></span> Customer Of The Month</div>
+                    <div id="custName" class="home-name"></div>
+                    <div id="custSales"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top selling and Top revenue products of the month -->
+        <div class="row">
+            <div class="col-6">
+                <div class="home-col">
+                    <div class="home-desc"><span id="prodSalesMonth"></span> Top Earning Product</div>
+                    <div id="prodSalesName" class="home-name"></div>
+                    <div id="prodSalesTotal"></div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="home-col">
+                    <div class="home-desc"><span id="prodQtyMonth"></span> Top Sold Product</div>
+                    <div id="prodQtyName" class="home-name"></div>
+                    <div id="prodQtyTotal"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row home-col" style="flex-direction:row; margin: 25px 0;">
+            <div class="col-12">
+                    <div class="home-desc" style="font-weight:bold; font-size: 150%">Legend</div>
+            </div>
+            <div class="col-4 legend-col">
+                <div class="legend-icon"><a href="/products"><i class="fas fa-store"></i></a></div>
+                <div class="legend-txt">Products</div>
+            </div>
+            <div class="col-4 legend-col">
+                <div class="legend-icon"><a href="/customers"><i class="fas fa-users"></i></a></div>
+                <div class="legend-txt">Customers</div>
+            </div>
+            <div class="col-4 legend-col">
+                <div class="legend-icon"><a href="/employees"><i class="fas fa-id-badge"></i></a></div>
+                <div class="legend-txt">Employees</div>
+            </div>
+            <div class="col-4 legend-col">
+                <div class="legend-icon"><a href="/reservations"><i class="fas fa-calendar"></i></a></div>
+                <div class="legend-txt">Reservations</div>
+            </div>
+            <div class="col-4 legend-col">
+                <div class="legend-icon"><a href="/shipments"><i class="fas fa-box-open"></i></a></div>
+                <div class="legend-txt">Shipments</div>
+            </div>
+            <div class="col-4 legend-col">
+                <div class="legend-icon"><a href="/purchases"><i class="fas fa-receipt"></i></a></div>
+                <div class="legend-txt">Purchases</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-pos">
+        <div class="footer nav-left">
+            <i class="far fa-copyright"></i> &nbsp; Employee Portal
+        </div>
+    
+        <div class="footer nav-center">
+            <div><span class="icon" style="content: url(./imgs/candy.png); margin-top: 5px; width: 2rem; height: auto;"></div>
+        </div>
+    
+        <div class="footer nav-right">
+            <a id="home-btn-footer" style="color:white" href="/">Home</a>
+        </div>
+    </div>
+</body>
+</html>
