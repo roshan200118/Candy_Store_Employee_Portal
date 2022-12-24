@@ -1,5 +1,16 @@
-# Candy_Store_Employee_Portal
- 
+# Candy Store Employee Portal
+
+A program that accepts a Vigenère’s Cipher ciphertext and key length, then using chi-square test, English letter frequencies, and scoring algorithms, the program outputs the calculated key and plaintext. Created using JavaScript. (2022).
+
+A candy store employee portal where employees can manage products, customers, employees, reservations, shipments and purchases. Employees can:
+* Perform CRUD operations on products
+* Create advertisements for customer’s highest quantity item or highest spent item
+* View shipments from suppliers
+* View purchases made by customers
+* Organize items on page using filters
+&nbsp;
+This project demonstrates the use of JavaScript, Express.js, AJAX, MySQL, Python, database design and normalization. (2021). 
+
 
 
 https://user-images.githubusercontent.com/61467608/209451470-f097ebc0-615b-4bd0-8ec8-073d34db6a3b.mp4
