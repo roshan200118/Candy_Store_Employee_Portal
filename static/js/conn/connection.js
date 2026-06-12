@@ -1,12 +1,12 @@
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
 function newConn()
 {
     let conn = mysql.createConnection({
-        host:'us-cdbr-east-06.cleardb.net',
-        user: 'b81cfff364960c',
-        password:'9d994542',
-        database:'heroku_ffb9511d068313f'
+        host:'lg7j30weuqckmw07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        user: 'kive3rcqiam2uci0',
+        password:'ajsz1u4maufeqx8u',
+        database:'t650mhy2tt432hkp'
     });
     // let conn = mysql.createConnection({
     //     host:'localhost',
