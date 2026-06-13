@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "build": "echo Build complete",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Team12",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.4.2",
     "express": "^4.17.1",
     "mysql": "^2.18.1",
     "mysql2": "^3.22.5"
