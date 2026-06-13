@@ -13,9 +13,9 @@
     }
   ],
   "env": {
-    "DB_HOST": "@db_host",
-    "DB_USER": "@db_user",
-    "DB_PASSWORD": "@db_password",
-    "DB_NAME": "@db_name"
+    "DB_HOST": "lg7j30weuqckmw07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "DB_USER": "kive3rcqiam2uci0",
+    "DB_PASSWORD": "ajsz1u4maufeqx8u",
+    "DB_NAME": "t650mhy2tt432hkp"
   }
 }
