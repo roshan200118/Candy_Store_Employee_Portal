@@ -8,10 +8,10 @@
   ],
   "routes": [
     { "handle": "filesystem" },
-    {
-      "src": "\/(.*)",
-      "dest": "index.js"
-    }
+    { "src": "/css/(.*)", "dest": "/static/css/$1" },
+    { "src": "/js/(.*)", "dest": "/static/js/$1" },
+    { "src": "/imgs/(.*)", "dest": "/static/imgs/$1" },
+    { "src": "/(.*)", "dest": "index.js" }
   ],
   "env": {
     "DB_HOST": "lg7j30weuqckmw07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
