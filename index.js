@@ -1533,6 +1533,7 @@ app.get('/getEmployeeOfMonth', (req, res) => {
                 });
             }
         });
+    conn.end();
 });
 app.get('/getCustomerOfMonth', (req, res) => {
     let conn = newConn();
@@ -1598,6 +1599,7 @@ app.get('/getCustomerOfMonth', (req, res) => {
                 });
             }
         });
+    conn.end();
 });
 app.get('/getProdSalesOfMonth', (req, res) => {
     let conn = newConn();
@@ -1653,6 +1655,7 @@ app.get('/getProdSalesOfMonth', (req, res) => {
                 });
             }
         });
+    conn.end();
 });
 app.get('/getProdQtyOfMonth', (req, res) => {
     let conn = newConn();
@@ -1708,6 +1711,7 @@ app.get('/getProdQtyOfMonth', (req, res) => {
                 });
             }
         });
+    conn.end();
 });
 
 
