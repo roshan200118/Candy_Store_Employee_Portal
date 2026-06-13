@@ -4,18 +4,13 @@ require('dotenv').config();
 const app = express();
 const path = require('path');
 
-// app.use(express.static('static'));
+app.use(express.static('static'));
 
-// // Root route - serve index.html
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'static', 'index.html'));
-// });
-
-app.use(express.static(path.join(__dirname, '..', 'static')));
-
+// Root route - serve index.html
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'static', 'index.html'));
+    res.sendFile(path.join(__dirname, 'static', 'index.html'));
 });
+
 
 function getPageBase(pageTitle) {
     return {
