@@ -31,17 +31,17 @@ function getPageBase(pageTitle) {
                             '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />'+
                         
                             '<!-- Personal Style Sheets-->'+
-                            '<link rel="stylesheet" href="./css/index.css">'+
+                            '<link rel="stylesheet" href="/css/index.css">'+
                         
                             '<!-- Tab icon -->'+
-                            '<link rel="icon" href="./imgs/candyStoreIcon.png">'+
+                            '<link rel="icon" href="/imgs/candyStoreIcon.png">'+
 
                             '<title>Employee Portal - ' + pageTitle + '</title>'+
                         '</head>'+
                         '<body>'+
                             '<div class="page-nav">'+
                                 '<div class="header nav-left">'+
-                                    '<div style="font-weight:bold; font-size: 2.25rem; display: flex;"><span class="icon" style="content: url(./imgs/candy.png);"></span> &nbsp; Employee Portal</div>'+
+                                    '<div style="font-weight:bold; font-size: 2.25rem; display: flex;"><span class="icon" style="content: url(/imgs/candy.png);"></span> &nbsp; Employee Portal</div>'+
                                 '</div>'+
                             
                                 '<div class="header nav-center">'+
@@ -84,7 +84,7 @@ function getPageBase(pageTitle) {
                             '</div>'+
                         
                             '<div class="footer nav-center">'+
-                                '<div><span class="icon" style="content: url(./imgs/candy.png); margin-top: 5px; width: 2rem; height: auto;"></div>'+
+                                '<div><span class="icon" style="content: url(/imgs/candy.png); margin-top: 5px; width: 2rem; height: auto;"></div>'+
                             '</div>'+
                         
                             '<div class="footer nav-right">'+
@@ -140,7 +140,7 @@ app.get('/products', (req,res) => {
     let base = getPageBase("Products");
     let conn = newConn();
     conn.connect();
-    let content =   '<script src="./js/productPage.js"></script>';
+    let content =   '<script src="/js/productPage.js"></script>';
 
     content +=  '<div class="container" style="padding: 0.5em">'+
                     '<div class="row">'+
@@ -459,7 +459,7 @@ app.get('/employees', (req,res) => {
     let conn = newConn();
     conn.connect();
 
-    let content =   '<script src="./js/employeePage.js"></script>'+
+    let content =   '<script src="/js/employeePage.js"></script>'+
                         '<div class="container" style="padding: 0.5em">'+
                             '<div class="row">'+
                                 '<div class="col-4" style="text-align:left">'+
@@ -618,7 +618,7 @@ app.get('/customers', (req,res) => {
     let conn = newConn();
     conn.connect();
 
-    let content =   '<script src="./js/customerPage.js"></script>'+
+    let content =   '<script src="/js/customerPage.js"></script>'+
                         '<div class="container" style="padding: 0.5em">'+
                             '<div class="row">'+
                                 '<div class="col-4" style="text-align:left">'+
@@ -892,7 +892,7 @@ app.get('/purchases', (req, res) => {
     let conn = newConn();
     conn.connect();
 
-    let content =   '<script src="./js/purchasePage.js"></script>'+
+    let content =   '<script src="/js/purchasePage.js"></script>'+
                         '<div class="container" style="padding: 0.5em">'+
                             '<div class="row">'+
                                 '<div class="col-4" style="text-align:left">'+
@@ -1122,7 +1122,7 @@ app.get('/reservations', (req, res) => {
     let conn = newConn();
     conn.connect();
 
-    let content =   '<script src="./js/reservationPage.js"></script>'+
+    let content =   '<script src="/js/reservationPage.js"></script>'+
                         '<div class="container" style="padding: 0.5em">'+
                             '<div class="row">'+
                                 '<div class="col-4" style="text-align:left">'+
@@ -1286,7 +1286,7 @@ app.get('/shipments', (req, res) => {
     let conn = newConn();
     conn.connect();
 
-    let content =   '<script src="./js/shipmentPage.js"></script>'+
+    let content =   '<script src="/js/shipmentPage.js"></script>'+
                         '<div class="container" style="padding: 0.5em">'+
                             '<div class="row">'+
                                 '<div class="col-4" style="text-align:left">'+
