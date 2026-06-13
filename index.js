@@ -1,5 +1,5 @@
 const express = require('express');
-const newConn = require('../static/js/conn/connection');
+const newConn = require('./static/js/conn/connection');
 require('dotenv').config();
 const app = express();
 const path = require('path');
