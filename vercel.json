@@ -1,17 +1,7 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/css/(.*)", "dest": "/static/css/$1" },
-    { "src": "/js/(.*)", "dest": "/static/js/$1" },
-    { "src": "/imgs/(.*)", "dest": "/static/imgs/$1" },
-    { "src": "/(.*)", "dest": "index.js" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index.js" }
   ],
   "env": {
     "DB_HOST": "lg7j30weuqckmw07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
