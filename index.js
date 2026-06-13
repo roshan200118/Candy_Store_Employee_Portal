@@ -1704,4 +1704,11 @@ app.get('/getProdQtyOfMonth', (req, res) => {
 
 
 //Hosted on port 2000
-app.listen(process.env.PORT || 2000);
+
+// Export app for serverless environments (Vercel)
+module.exports = app;
+
+// Start server only when run directly, not during build
+if (require.main === module) {
+    app.listen(process.env.PORT || 2000);
+}
