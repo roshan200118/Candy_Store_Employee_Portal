@@ -2,11 +2,5 @@
   "version": 2,
   "rewrites": [
     { "source": "/(.*)", "destination": "/api/index.js" }
-  ],
-  "env": {
-    "DB_HOST": "lg7j30weuqckmw07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "DB_USER": "kive3rcqiam2uci0",
-    "DB_PASSWORD": "ajsz1u4maufeqx8u",
-    "DB_NAME": "t650mhy2tt432hkp"
-  }
+  ]
 }
