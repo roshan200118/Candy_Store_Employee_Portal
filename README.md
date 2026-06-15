@@ -1,6 +1,6 @@
 # Candy Store Employee Portal
 
-### Click here to open: https://candy-store-employee-portal.herokuapp.com/
+### Click here to open: https://candy-store-employee-portal.vercel.app/
 
 A candy store employee portal where employees can manage products, customers, employees, reservations, shipments and purchases. Employees can:
 * Perform CRUD operations on products
